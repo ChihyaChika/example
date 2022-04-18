@@ -1,0 +1,77 @@
+*{
+  border: solid 1px black
+}
+.card{
+
+  display: inline-block;
+}
+h3{
+  background-color: Silver;
+  overflow: hidden;
+}
+h3.ib{
+  display: inline-block;
+}
+h2#float-intro {
+    background-color: Thistle;
+}
+h3 .left{
+  float: left;
+  background-color: Thistle;
+  padding: 10px;
+}
+h3 .right{
+  float: right;
+  background-color: Thistle;
+  padding: 10px;
+  
+}
+
+
+.card{
+  width: 500px;
+  height: 200px;
+}
+
+.rects .rect{
+  width: 50px;
+  height: 50px; 
+  display: inline-block;
+}
+.rect.rect1{
+  background-color: LightBlue;
+}
+.rect.rect2{
+  background-color: IndianRed;
+}
+.rect.rect3{
+  background-color: BurlyWood;
+}
+
+.cardStatic .rect2{
+  position: static;
+  left: 50px;
+  top: 50px;
+}
+
+.cardRelative .rect2{
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+.cardAbsolute{
+  position: relative;
+}
+
+.cardAbsolute .rect2{
+  position: absolute;
+  left: 150px;
+  top: 50px;
+}
+
+.cardFixed .rect2{
+  position: fixed;
+  left: 450px;
+  bottom: 50px;
+}
+

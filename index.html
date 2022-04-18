@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>css的定位與佈局</h1>
+    <hr />
+    <h2>display</h2>
+    <h3>塊元素 display 預設為 block：會左右稱滿</h3>
+    <h3 class="ib">行內元素 display 預設為 inline-block</h3>
+    <h3 class="ib">inline-block 內容物有多寬</h3>
+    <h3 class="ib">inline-block 它就有多寬</h3>
+    <h3 class="ib">
+      inline-block 會緊跟著上一個元素，一行空間不夠放，就會自動換行
+    </h3>
+    <hr />
+    <h2 id="float-intro">
+      float (父容器設定overflow:hidden，float元素可以將父容器撐開)
+    </h2>
+    <hr />
+    <h3>
+      <div class="left">左側</div>
+      預設的block 會左右稱滿
+      <div class="right">右側</div>
+      <div class="right">更多</div>
+      <div class="right">更多</div>
+    </h3>
+
+    <h2>position</h2>
+    <div class="card cardStatic">
+      <h4>static 只能動外內距，在排版系統內</h4>
+      <div class="rects">
+        <div class="rect rect1"></div>
+        <div class="rect rect2"></div>
+        <div class="rect rect3"></div>
+      </div>
+    </div>
+    <div class="card cardRelative">
+      <h4>relative 可以簡易偏移，在排版系統內</h4>
+      <div class="rects">
+        <div class="rect rect1"></div>
+        <div class="rect rect2"></div>
+        <div class="rect rect3"></div>
+      </div>
+    </div>
+    <div class="card cardAbsolute">
+      <h4>absolute 絕對定位，在排版系統外</h4>
+      <div class="rects">
+        <div class="rect rect1"></div>
+        <div class="rect rect2"></div>
+        <div class="rect rect3"></div>
+      </div>
+    </div>
+    <div class="card cardFixed">
+      <h4>fixed 視窗絕對定位，在排版系統外</h4>
+      <div class="rects">
+        <div class="rect rect1"></div>
+        <div class="rect rect2"></div>
+        <div class="rect rect3"></div>
+      </div>
+    </div>
+  </body>
+</html>
